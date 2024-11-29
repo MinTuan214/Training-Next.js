@@ -2,13 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-
-type User = {
-  id: number;
-  name: string;
-  username: string;
-  email: string;
-};
+import { User } from "./types/User";
 
 export default function Home() {
   const [users, setUsers] = useState<User[]>([]);

@@ -1,16 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-
-type User = {
-  id: number;
-  name: string;
-  username: string;
-  email: string;
-  phone: string;
-  website: string;
-  address: string;
-};
+import { User } from "@/app/types/User";
 
 export default function UserDetail({params}: {params: Promise<{ detail: string }>}) {
   const [id, setId] = useState<number>();
